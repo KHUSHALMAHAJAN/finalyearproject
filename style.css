@@ -1,0 +1,170 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(42, 14, 68);
+}
+
+header {
+    position: sticky;
+}
+
+.fristline {
+    color: rgb(197, 250, 6);
+    padding-top: 60px;
+    padding-left: 100px;
+    font-size: 70px;
+
+}
+
+.secondline {
+    color: rgb(211, 221, 119);
+    padding-top: 20px;
+    padding-left: 120px;
+    font-size: 70px;
+}
+
+.log {
+    float: right;
+    margin-top: -110px;
+    margin-right: 50px;
+}
+
+.login {
+    margin-right: 70px;
+}
+button {
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgb(192, 192, 241);
+    color: rgb(50, 173, 112);
+    font-size: 30px;
+}
+.box {
+    float: left;
+    border: 2px solid red;
+    margin-top: 50px;
+    margin-left: 200px;
+    padding: 30px;
+    background-color: rgb(107, 173, 107);
+    border-radius: 20px;
+    font-size: 30px;
+    color: rgb(240, 230, 230);
+    animation: animationbox 2s 0ms 1 alternate-reverse;
+}
+
+.condition1 {
+    padding: 10px;
+}
+
+.condition2 {
+    padding: 10px;
+}
+
+.condition3 {
+    padding: 10px;
+}
+
+ul {
+    margin-top: 390px;
+    display: flex;
+    justify-content: flex;
+    list-style: none;
+    position: relative;
+}
+
+.ball {
+    margin-right: 40px;
+    border: 2px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 120px;
+    //animation: name duration timing-function delay iteration-count direction fill-mode;
+    //animation: animationball 4s 0ms infinite alternate-reverse;
+}
+
+.balle {
+    margin-right: 40px;
+    border: 2px solid white;
+    width: 25px;
+    height: 25px;
+    border-radius: 120px;
+    //animation: name duration timing-function delay iteration-count direction fill-mode;
+    //animation: animationball 4s 0ms infinite alternate-reverse;
+}
+
+.balle {
+    animation: animationball 4s 0ms infinite alternate-reverse;
+}
+
+.ball {
+    animation: animationball 5s 0ms infinite alternate-reverse;
+}
+
+
+@keyframes animationball {
+    from {}
+
+    to {
+        transform: translatey(-650px);
+    }
+}
+
+.secondline {
+    animation: animationball 2s 0ms 1 alternate-reverse;
+}
+
+.log {
+    animation: loganimation 2s 0ms 1 alternate-reverse;
+}
+
+@keyframes loganimation {
+    from {}
+
+    to {
+        transform: translatex(500px);
+    }
+}
+
+@keyframes animationbox {
+    from {}
+
+    to {
+        transform: translateX(-600px);
+    }
+}
+@media only screen and (max-width: 720px) {
+     .fristline{
+        font-size: 18px;
+        margin-left: -60px;
+        margin-top: -10px;
+     }
+     .secondline{
+        font-size: 22px;
+        margin-left: -60px;
+        margin-top: -15px;
+     }
+     .box{
+        
+        font-size: 14px;
+        padding: 5px;
+        margin-top: 9px;
+        margin-left: 50px;
+     }
+     .log{
+        //position: relative;
+        margin-right: 500px;
+        margin-top: 25px;
+        display: flex: ;;
+     }
+     button{
+        font-size: 14px;
+        padding: 5px;
+     }
+     .ball,.balle{
+        animation: none;
+        display: none;
+     }
+}
