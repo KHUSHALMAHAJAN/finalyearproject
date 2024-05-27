@@ -1,11 +1,16 @@
-*{
+/* Reset padding and margin for all elements */
+* {
     padding: 0;
     margin: 0;
 }
-body{
+
+/* Body styling */
+body {
     background-color: rgb(42, 14, 68);
 }
-.fristline{
+
+/* Styling for the first line of text */
+.fristline {
     max-width: 80vw;
     margin: auto;
     font-size: 5.5vw;
@@ -13,7 +18,9 @@ body{
     margin-bottom: 2vw;
     color: rgb(197, 250, 6);
 }
-.flex{
+
+/* Flex container for the second line and log section */
+.flex {
     max-width: 80vw;
     display: flex;
     margin: auto;
@@ -21,14 +28,20 @@ body{
     align-items: center;
     font-size: 5vw;
 }
-.secondline{
+
+/* Styling for the second line of text */
+.secondline {
     font-size: 8vw;
     color: rgb(211, 221, 119);
 }
-.log{
-    padding-bottom:3vw;
+
+/* Log section styling */
+.log {
+    padding-bottom: 3vw;
 }
-.login{
+
+/* Login button styling */
+.login {
     margin-right: 4vw;
     padding: 3vw;
     border-radius: 2vw;
@@ -37,7 +50,9 @@ body{
     background-color: rgb(192, 192, 241);
     color: rgb(50, 173, 112);
 }
-.signup{
+
+/* Signup button styling */
+.signup {
     padding: 3vw;
     font-size: 2vw;
     border-radius: 2vw;
@@ -45,9 +60,11 @@ body{
     background-color: rgb(192, 192, 241);
     color: rgb(50, 173, 112);
 }
-.box{
+
+/* Box styling and animation */
+.box {
     background-color: rgb(107, 173, 107);
-    text-align:  center;
+    text-align: center;
     margin: 6vw;
     padding: 5vw;
     margin-left: 30vw;
@@ -56,23 +73,28 @@ body{
     border-radius: 2vw;
     border: solid 0.4vw red;
     color: rgb(240, 230, 230);
+    animation: animationbox 2s 0ms 1 alternate-reverse;
 }
-.condition1{
+
+/* Condition classes padding */
+.condition1, .condition2, .condition3 {
     padding: 1vw;
 }
-.condition2{
-    padding: 1vw;
-}
-.ball, .balle{
+
+/* Ball styling */
+.ball, .balle {
     border: 0.2vw solid white;
     margin: 1.7vw;
     border-radius: 1.2vw;
     padding: 0.7vw;
-    
 }
-ul{
+
+/* List styling */
+ul {
     display: flex;
 }
+
+/* Ball animations */
 .balle {
     animation: animationball 4s 0ms infinite alternate-reverse;
 }
@@ -81,70 +103,81 @@ ul{
     animation: animationball 5s 0ms infinite alternate-reverse;
 }
 
+/* Keyframes for ball animations */
 @keyframes animationball {
     from {}
-
     to {
         transform: translatey(-76vw);
     }
 }
+
+/* Second line animation */
 .secondline {
     animation: animationball 2s 0ms 1 alternate-reverse;
 }
 
+/* Log section animation */
 .log {
     animation: loganimation 2s 0ms 1 alternate-reverse;
 }
 
 @keyframes loganimation {
     from {}
-
     to {
         transform: translatex(500px);
     }
 }
-.box{
+
+/* Box animation */
+.box {
     animation: animationbox 2s 0ms 1 alternate-reverse;
 }
+
 @keyframes animationbox {
     from {}
-
     to {
         transform: translateX(-600px);
     }
 }
+
+/* Media query for screens 720px or narrower */
 @media only screen and (max-width: 720px) {
-    .fristline{
+    .fristline {
         margin: 25vw;
         margin-bottom: 15vw;
         font-size: 13vw;
     }
-    .secondline{
+    .secondline {
         font-size: 13vw;
         margin-bottom: 20vw;
     }
-    .flex{
+    .flex {
         display: block;
     }
-    .log{
+    .log {
         margin-left: 1vw;
         margin-bottom: 20vw;
     }
-    .login{
+    .login {
         font-size: 7vw;
     }
-    .signup{
+    .signup {
         font-size: 7vw;
         margin-left: 20vw;
     }
-    .box{
+    .box {
         font-size: 5vw;
         padding: 3vw;
         margin-left: 20vw;
         margin-right: vw;
     }
-    .ball , .balle{
+    .ball, .balle {
         animation: none;
         display: none;
     }
+}
+
+/* Debug styles */
+.log, .login, .signup {
+    outline: 2px solid red; /* Add this for debugging purposes */
 }
