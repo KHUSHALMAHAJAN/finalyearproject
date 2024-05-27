@@ -1,100 +1,78 @@
-* {
+*{
     padding: 0;
     margin: 0;
 }
-
-body {
+body{
     background-color: rgb(42, 14, 68);
 }
-
-header {
-    position: sticky;
-}
-
-.fristline {
+.fristline{
+    max-width: 80vw;
+    margin: auto;
+    font-size: 5.5vw;
+    margin: 8.4vw;
+    margin-bottom: 2vw;
     color: rgb(197, 250, 6);
-    padding-top: 60px;
-    padding-left: 100px;
-    font-size: 70px;
-
 }
-
-.secondline {
+.flex{
+    max-width: 80vw;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 5vw;
+}
+.secondline{
+    font-size: 8vw;
     color: rgb(211, 221, 119);
-    padding-top: 20px;
-    padding-left: 120px;
-    font-size: 70px;
 }
-
-.log {
-    float: right;
-    margin-top: -110px;
-    margin-right: 50px;
+.log{
+    padding-bottom:3vw;
 }
-
-.login {
-    margin-right: 70px;
-}
-button {
-    padding: 20px;
-    border-radius: 25px;
+.login{
+    margin-right: 4vw;
+    padding: 3vw;
+    border-radius: 2vw;
+    font-size: 2vw;
+    border: solid .2vw green;
     background-color: rgb(192, 192, 241);
     color: rgb(50, 173, 112);
-    font-size: 30px;
 }
-.box {
-    float: left;
-    border: 2px solid red;
-    margin-top: 50px;
-    margin-left: 200px;
-    padding: 30px;
+.signup{
+    padding: 3vw;
+    font-size: 2vw;
+    border-radius: 2vw;
+    border: solid .2vw green;
+    background-color: rgb(192, 192, 241);
+    color: rgb(50, 173, 112);
+}
+.box{
     background-color: rgb(107, 173, 107);
-    border-radius: 20px;
-    font-size: 30px;
+    text-align:  center;
+    margin: 6vw;
+    padding: 5vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    font-size: 2.5vw;
+    border-radius: 2vw;
+    border: solid 0.4vw red;
     color: rgb(240, 230, 230);
-    animation: animationbox 2s 0ms 1 alternate-reverse;
 }
-
-.condition1 {
-    padding: 10px;
+.condition1{
+    padding: 1vw;
 }
-
-.condition2 {
-    padding: 10px;
+.condition2{
+    padding: 1vw;
 }
-
-.condition3 {
-    padding: 10px;
+.ball, .balle{
+    border: 0.2vw solid white;
+    margin: 1.7vw;
+    border-radius: 1.2vw;
+    padding: 0.7vw;
+    
 }
-
-ul {
-    margin-top: 390px;
+ul{
     display: flex;
-    justify-content: flex;
-    list-style: none;
-    position: relative;
 }
-
-.ball {
-    margin-right: 40px;
-    border: 2px solid white;
-    width: 25px;
-    height: 25px;
-    border-radius: 120px;
-    //animation: name duration timing-function delay iteration-count direction fill-mode;
-    //animation: animationball 4s 0ms infinite alternate-reverse;
-}
-
-.balle {
-    margin-right: 40px;
-    border: 2px solid white;
-    width: 25px;
-    height: 25px;
-    border-radius: 120px;
-    //animation: name duration timing-function delay iteration-count direction fill-mode;
-    //animation: animationball 4s 0ms infinite alternate-reverse;
-}
-
 .balle {
     animation: animationball 4s 0ms infinite alternate-reverse;
 }
@@ -103,15 +81,13 @@ ul {
     animation: animationball 5s 0ms infinite alternate-reverse;
 }
 
-
 @keyframes animationball {
     from {}
 
     to {
-        transform: translatey(-650px);
+        transform: translatey(-76vw);
     }
 }
-
 .secondline {
     animation: animationball 2s 0ms 1 alternate-reverse;
 }
@@ -127,7 +103,9 @@ ul {
         transform: translatex(500px);
     }
 }
-
+.box{
+    animation: animationbox 2s 0ms 1 alternate-reverse;
+}
 @keyframes animationbox {
     from {}
 
@@ -136,53 +114,37 @@ ul {
     }
 }
 @media only screen and (max-width: 720px) {
-     .fristline{
-        font-size: 50px;
-        margin-left: -100px;
-        margin-top: 100px;
-     }
-     .secondline{
-        font-size: 60px;
-        margin-left: -100px;
-        margin-top: 40px;
-     }
-     .box{
-        
-        font-size: 39px;
-        padding: 6px;
-        margin-top: 70px;
-        margin-left: 0px;
-     }
-     /*.log{
-        //position: relative;
-        margin-right: 400px;
-        margin-top: 200px;
-        //display: flex: ;;
-     }
-    .login{
-        margin-left: 500px;
-        //text-align: center;
-        //display: flex;
-  //justify-content: center;
-    //width : 50%
+    .fristline{
+        margin: 25vw;
+        margin-bottom: 15vw;
+        font-size: 13vw;
     }
-    .singup{
-        margin-right:100px;
-    }*/
+    .secondline{
+        font-size: 13vw;
+        margin-bottom: 20vw;
+    }
+    .flex{
+        display: block;
+    }
     .log{
-        margin-top: 200px;
+        margin-left: 1vw;
+        margin-bottom: 20vw;
     }
     .login{
-        position: static;
-        margin-top: 400px;
-        margin-left: -600px;
+        font-size: 7vw;
     }
-     button{
-        font-size: 30px;
-        padding: 5px;
-     }
-     .ball,.balle{
+    .signup{
+        font-size: 7vw;
+        margin-left: 20vw;
+    }
+    .box{
+        font-size: 5vw;
+        padding: 3vw;
+        margin-left: 20vw;
+        margin-right: vw;
+    }
+    .ball , .balle{
         animation: none;
         display: none;
-     }
+    }
 }
