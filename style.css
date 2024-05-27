@@ -137,30 +137,48 @@ ul {
 }
 @media only screen and (max-width: 720px) {
      .fristline{
-        font-size: 18px;
-        margin-left: -60px;
-        margin-top: -10px;
+        font-size: 50px;
+        margin-left: -100px;
+        margin-top: 100px;
      }
      .secondline{
-        font-size: 22px;
-        margin-left: -60px;
-        margin-top: -15px;
+        font-size: 60px;
+        margin-left: -100px;
+        margin-top: 40px;
      }
      .box{
         
-        font-size: 14px;
-        padding: 5px;
-        margin-top: 9px;
-        margin-left: 50px;
+        font-size: 39px;
+        padding: 6px;
+        margin-top: 70px;
+        margin-left: 0px;
      }
-     .log{
+     /*.log{
         //position: relative;
-        margin-right: 500px;
-        margin-top: 25px;
-        display: flex: ;;
+        margin-right: 400px;
+        margin-top: 200px;
+        //display: flex: ;;
      }
+    .login{
+        margin-left: 500px;
+        //text-align: center;
+        //display: flex;
+  //justify-content: center;
+    //width : 50%
+    }
+    .singup{
+        margin-right:100px;
+    }*/
+    .log{
+        margin-top: 200px;
+    }
+    .login{
+        position: static;
+        margin-top: 400px;
+        margin-left: -600px;
+    }
      button{
-        font-size: 14px;
+        font-size: 30px;
         padding: 5px;
      }
      .ball,.balle{
