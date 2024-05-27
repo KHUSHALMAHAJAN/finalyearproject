@@ -176,8 +176,3 @@ ul {
         display: none;
     }
 }
-
-/* Debug styles */
-.log, .login, .signup {
-    outline: 2px solid red; /* Add this for debugging purposes */
-}
