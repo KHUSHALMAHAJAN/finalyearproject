@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(13, 78, 82);
+}
+input{
+    display: block;
+    margin: 5vw;
+    border: solid .2vw blue;
+    padding: 0.5vw;
+    border-radius: 1vw;
+    font-size: 1.3vw;
+}
+input:hover{
+    font-size: 1.5vw;
+}
+.box{
+    margin: auto;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    width: 29%;
+    border: 3px solid #73AD21;
+    padding: vw;
+    text-align: center;
+    background-color: rgb(168, 236, 168);
+    border-radius: 2vw;
+}
+button{
+    margin: 2vw;
+    padding: 1vw;
+    font-size: 1.5vw;
+    border: solid 0.2vw blue;
+    border-radius: 2vw;
+    color: green;
+    background-color: white;
+}
+button:hover{
+    font-size: 2vw;
+}
+.line1{
+    width: 0.4vw;
+    height: 7vw;
+    background-color: red;
+}
