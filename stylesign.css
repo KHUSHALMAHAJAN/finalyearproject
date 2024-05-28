@@ -39,8 +39,40 @@ button{
 button:hover{
     font-size: 2vw;
 }
-.line1{
+.animation{
+    display: flex;
+}
+.lineright{
+    display: flex;
+    //background-color: white;
+    //display: inline-block;
+}
+.lineodd{
+    
     width: 0.4vw;
     height: 7vw;
     background-color: red;
+    margin: 2.5vw;
+    animation: animationline 4s 0ms infinite alternate-reverse;
+}
+.lineeven{
+    width: 0.4vw;
+    height: 7vw;
+    background-color: red;
+    margin: 2.5vw;
+    animation: animationline 6s 0ms infinite alternate-reverse;
+}
+.lineleft{
+    display: flex;
+   // float: right;
+    //background-color: white;
+    margin-left: 35vw;
+}
+@keyframes animationline {
+    from {
+        transform: translateY(-10vw);
+    }
+    to {
+        transform: translatey(-62vw);
+    }
 }
