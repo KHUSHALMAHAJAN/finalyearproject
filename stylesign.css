@@ -76,3 +76,39 @@ button:hover{
         transform: translatey(-62vw);
     }
 }
+@media only screen and (max-width: 720px){
+    .animation{
+        display: none;
+    }
+    .box{
+        margin-top: 22vw;
+        padding: 30vw; 
+          
+    }
+    input{
+        font-size: 5vw;
+        margin-left: -29vw;
+        background-color: blanchedalmond;
+        padding: 4vw;
+        //align-items: center;
+        //justify-content: center;
+    }
+    form{
+        padding: 7vw;
+    }
+    button{
+        padding: 1.5vw;
+        margin-left: -20vw;
+
+        font-size: 6vw;
+    }
+    .signin{
+        margin-left: -20vw;
+        margin-right: 2vw;
+    }
+    .cal{
+        margin-left: 2vw;
+        margin-right: -25vw;
+
+    }
+}
